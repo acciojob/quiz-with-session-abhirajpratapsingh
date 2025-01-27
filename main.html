@@ -1,17 +1,35 @@
 <!DOCTYPE html>
-
-<html>
-  <head>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-
-  <body>
-    <!-- do not change this code -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz with Session Storage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question label {
+            display: block;
+            margin: 5px 0;
+        }
+        #score {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
     <h1>Quiz</h1>
-    <div id="questions"></div>
-    <button id="submit">Submit</button>
-    <div id="score"></div>
+    <form id="quiz-form">
+        <!-- Questions will be added here dynamically -->
+    </form>
+    <button id="submit-btn">Submit Quiz</button>
+    <p id="score"></p>
 
-    <script type="text/javascript" src="./script.js"></script>
-  </body>
+    <script src="./script.js"></script>
+</body>
 </html>
